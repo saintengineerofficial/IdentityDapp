@@ -10,9 +10,9 @@ import { useRef } from "react"
 
 import { useMediaQuery } from "react-responsive"
 
+import { IconBriefcase, IconIdBadge2, IconLockSquareRounded, IconShare } from "@tabler/icons-react"
 import { useState } from "react"
 import { PiArrowRight } from "react-icons/pi"
-import { IconBriefcase, IconIdBadge2, IconLockSquareRounded, IconShare } from "@tabler/icons-react"
 
 const tabs = [
   {
@@ -108,8 +108,7 @@ const HeroSection = () => {
             <motion.div
               key={tab.name}
               className={`h-36 w-60 justify-center space-x-4 sm:my-10 xl:my-0 xl:flex xl:pt-4 ${activeTab === tab ? "rounded-xl border bg-white pt-2" : "m rounded-xl bg-[#f6f5f4] pt-2 shadow-md"} `}
-              onMouseEnter={() => setActiveTab(tab)}
-            >
+              onMouseEnter={() => setActiveTab(tab)}>
               <div className="px-4">
                 <div className="flex items-center">
                   <div>{tab.icon}</div>
@@ -120,8 +119,7 @@ const HeroSection = () => {
                   className="flex flex-col text-sm"
                   initial={{ y: 0 }}
                   animate={{ y: activeTab === tab ? 10 : 25 }}
-                  transition={{ duration: 0.2 }}
-                >
+                  transition={{ duration: 0.2 }}>
                   <div>
                     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
                       {tab.description}
@@ -138,8 +136,7 @@ const HeroSection = () => {
             <motion.div
               key={tab.name}
               className={`h-36 w-60 justify-center space-x-4 sm:my-10 xl:my-0 xl:flex xl:pt-4 ${activeTab === tab ? "rounded-xl border bg-white pt-2" : "m rounded-xl bg-[#f6f5f4] pt-2 shadow-md"} `}
-              onMouseEnter={() => setActiveTab(tab)}
-            >
+              onMouseEnter={() => setActiveTab(tab)}>
               <div className="px-4">
                 <div className="flex items-center">
                   <div>{tab.icon}</div>
@@ -150,8 +147,7 @@ const HeroSection = () => {
                   className="flex flex-col text-sm"
                   initial={{ y: 0 }}
                   animate={{ y: activeTab === tab ? 10 : 25 }}
-                  transition={{ duration: 0.2 }}
-                >
+                  transition={{ duration: 0.2 }}>
                   <div>
                     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
                       {tab.description}
